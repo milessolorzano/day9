@@ -64,9 +64,9 @@ function leftPress(playerName) {
 	
 	let otherPlayer = otherCharacterSelector(playerName);
 	if (Number(activePlayer.dataset.x) != 0) {
-		// potential valid move
+		
 		if (Number(otherPlayer.dataset.x) != Number(activePlayer.dataset.x) - 1 || Number(otherPlayer.dataset.y) != Number(activePlayer.dataset.y)) {
-			// valid move
+			
 			let newTile = selectGridElem(Number(activePlayer.dataset.x) - 1, Number(activePlayer.dataset.y));
 			newTile.classList.add(playerName);
 			activePlayer.classList.remove(playerName);
